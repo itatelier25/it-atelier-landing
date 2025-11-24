@@ -61,7 +61,7 @@ const Contacts = () => {
             >
               <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-card border border-border shadow-[var(--shadow-card)] hover-lift">
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${method.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                  <method.icon className="w-7 h-7 text-accent-foreground" />
+                  <method.icon className="w-7 h-7 text-white" />
                 </div>
                 <span className="font-medium text-foreground">{method.label}</span>
               </div>
