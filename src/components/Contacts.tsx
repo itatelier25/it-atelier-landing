@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
-import { Send, MessageCircle, Mail } from "lucide-react";
+import { Send, MessageCircle, Mail, Instagram, Facebook } from "lucide-react";
 
 const Contacts = () => {
   const { t } = useLanguage();
@@ -24,6 +24,18 @@ const Contacts = () => {
       href: "mailto:hello@itatelier.example",
       color: "from-cyan to-accent",
     },
+    {
+      icon: Instagram,
+      label: t("contacts.instagram"),
+      href: "https://instagram.com/your_it_atelier",
+      color: "from-pink to-accent",
+    },
+    {
+      icon: Facebook,
+      label: t("contacts.facebook"),
+      href: "https://facebook.com/your_it_atelier",
+      color: "from-blue to-accent",
+    },
   ];
 
   return (
@@ -38,7 +50,7 @@ const Contacts = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-6 mb-16">
+        <div className="grid sm:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {contactMethods.map((method, index) => (
             <a
               key={index}

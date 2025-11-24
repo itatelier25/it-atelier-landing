@@ -73,6 +73,8 @@ const translations = {
     "contacts.telegram": "Telegram",
     "contacts.whatsapp": "WhatsApp",
     "contacts.email": "Email",
+    "contacts.instagram": "Instagram",
+    "contacts.facebook": "Facebook",
     "footer.text": "IT-Atelier · Automation, integrations and AI-assistants",
   },
   ru: {
@@ -139,6 +141,8 @@ const translations = {
     "contacts.telegram": "Telegram",
     "contacts.whatsapp": "WhatsApp",
     "contacts.email": "Email",
+    "contacts.instagram": "Instagram",
+    "contacts.facebook": "Facebook",
     "footer.text": "IT-Atelier · Автоматизация, интеграции и AI-ассистенты",
   },
 };

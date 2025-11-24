@@ -33,7 +33,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("hero")} className="flex items-center gap-3 group">
-            <img alt="IT-Atelier" className="h-10 w-auto" src="/lovable-uploads/bc7ff13b-bbf6-4f86-bb08-1f79aa39c8ea.png" />
+            <img alt="IT-Atelier" className="h-14 w-auto" src="/lovable-uploads/bc7ff13b-bbf6-4f86-bb08-1f79aa39c8ea.png" />
           </button>
 
           {/* Desktop Navigation */}
