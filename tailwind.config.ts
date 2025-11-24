@@ -51,6 +51,14 @@ export default {
           DEFAULT: "hsl(var(--green))",
           foreground: "hsl(var(--green-foreground))",
         },
+        pink: {
+          DEFAULT: "hsl(var(--pink))",
+          foreground: "hsl(var(--pink-foreground))",
+        },
+        blue: {
+          DEFAULT: "hsl(var(--blue))",
+          foreground: "hsl(var(--blue-foreground))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

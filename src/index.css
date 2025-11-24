@@ -42,6 +42,14 @@ All colors MUST be HSL.
     --green: 88 50% 53%;
     --green-foreground: 210 60% 15%;
 
+    /* Pink accent for Instagram */
+    --pink: 330 80% 60%;
+    --pink-foreground: 0 0% 98%;
+
+    /* Blue accent for Facebook */
+    --blue: 221 83% 53%;
+    --blue-foreground: 0 0% 98%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
