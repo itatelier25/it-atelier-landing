@@ -3,37 +3,40 @@ import { Button } from "@/components/ui/button";
 import { Send, MessageCircle, Mail, Instagram, Facebook } from "lucide-react";
 
 const Contacts = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage(); // или { t, language };
 
   const contactMethods = [
     {
       icon: Send,
       label: t("contacts.telegram"),
-      href: "https://t.me/your_it_atelier",
+      href:
+        lang === "ru"
+          ? "https://t.me/It_Atelier" // русская телега
+          : "https://t.me/It_Atelier_en", // англ. телега
       color: "from-accent to-cyan",
     },
     {
       icon: MessageCircle,
       label: t("contacts.whatsapp"),
-      href: "https://wa.me/your_number",
+      href: "https://wa.me/85566504612",
       color: "from-green to-accent",
     },
     {
       icon: Mail,
       label: t("contacts.email"),
-      href: "mailto:hello@itatelier.example",
+      href: "mailto:it.atelier25@gmail.com",
       color: "from-cyan to-accent",
     },
     {
       icon: Instagram,
       label: t("contacts.instagram"),
-      href: "https://instagram.com/your_it_atelier",
+      href: "https://www.instagram.com/it_._atelier",
       color: "from-pink to-accent",
     },
     {
       icon: Facebook,
       label: t("contacts.facebook"),
-      href: "https://facebook.com/your_it_atelier",
+      href: "https://www.facebook.com/share/1GLXyLxbak/",
       color: "from-blue to-accent",
     },
   ];
@@ -61,7 +64,7 @@ const Contacts = () => {
             >
               <div className="flex flex-col items-center gap-4 p-6 rounded-2xl bg-card border border-border shadow-[var(--shadow-card)] hover-lift">
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${method.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                  <method.icon className="w-7 h-7 text-white" />
+                  <method.icon className="w-7 h-7 text-accent-foreground" />
                 </div>
                 <span className="font-medium text-foreground">{method.label}</span>
               </div>
